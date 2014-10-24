@@ -9,9 +9,16 @@ public class empireSpawn : MonoBehaviour {
 	
 
 	void Start(){
+		print(Application.loadedLevel);
 		StartCoroutine (Generator () );
-	}
 
+	}
+	void Update(){	
+
+		if (Input.GetKey ("r")) {
+			Application.LoadLevel(0);
+		}
+	}
 	IEnumerator Generator(){
 
 		int counter = 0;
