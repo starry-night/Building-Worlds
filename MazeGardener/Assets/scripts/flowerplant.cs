@@ -18,7 +18,7 @@ public class flowerplant : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Time.time > nextPlantingTime ) {
-			if (Random.Range (0f, 1f) > 0.3f ) {
+			if (Random.Range (0f, 1f) > 0.4f ) {
 				Instantiate ( peashooter, transform.position, Quaternion.identity );
 				nextPlantingTime += Random.Range( plantInterval, plantInterval+5f);
 			}
