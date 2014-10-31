@@ -17,7 +17,7 @@ public class zombiespawn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Time.time > nextPlantingTime ) {
-			if (Random.Range (0f, 1f) > 0.3f ) {
+			if (Random.Range (0f, 1f) > 0.5f ) {
 			Instantiate ( zombie, transform.position, Quaternion.identity );
 			nextPlantingTime += Random.Range( zombieInterval, zombieInterval+5f);
 			}
