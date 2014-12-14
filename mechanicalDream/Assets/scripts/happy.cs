@@ -21,7 +21,11 @@ public class happy : MonoBehaviour {
 	public Material happyTex;	
 	public Material happySky;
 	public GameObject par;
-	
+
+	public GameObject happySound;
+	public GameObject backgroundSound;
+	public GameObject tardisSound;
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (Generator1 ());
@@ -31,12 +35,14 @@ public class happy : MonoBehaviour {
 		floor.renderer.material = happyTex;
 		RenderSettings.ambientLight = new Color(0.556f, 0.549f, 0.396f,0.03f);
 		par.SetActive(true);
+		happySound.SetActive(true);
+		backgroundSound.SetActive(false);
+		tardisSound.SetActive(true);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		//floor.renderer.material= happyTex;
 		randomPosX = Random.Range (-50, 35);
 		if (randomPosX > -10) {
 			randomPosX+=15;

@@ -35,14 +35,17 @@ public class roomLight : MonoBehaviour {
 	private Color colorStart;
 	private Color colorEnd;
 
+	public Texture2D lightOFF;
+
 	float duration=1000f;
 	float t;
-
+	/*
 	public float maxIntensity = 1f;
 	public float minIntensity = 0f;
 	public float pulseSpeed = 1f; //here, a value of 0.5f would take 2 seconds and a value of 2f would take half a second
 	private float targetIntensity = 1f;
 	private float currentIntensity; 
+	*/
 
 	void OnMouseEnter () {
 		Cursor.SetCursor(altCursor, Vector2.zero, CursorMode.Auto);
@@ -90,6 +93,8 @@ public class roomLight : MonoBehaviour {
 			frame.SetActive(false);
 			frame2.SetActive(false);
 			lightBase.SetActive(false);
+
+			this.gameObject.renderer.material.mainTexture=lightOFF;
 
 			toggle=false;
 			robotActive=false;

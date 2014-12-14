@@ -46,14 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\afraid.cs" />
      <Compile Include="Assets\scripts\angry.cs" />
+     <Compile Include="Assets\scripts\audioFade.cs" />
      <Compile Include="Assets\scripts\happy.cs" />
      <Compile Include="Assets\scripts\instantiateEnabler.cs" />
      <Compile Include="Assets\scripts\lightInteract.cs" />
      <Compile Include="Assets\scripts\mouseInteract.cs" />
      <Compile Include="Assets\scripts\robotMove.cs" />
      <Compile Include="Assets\scripts\roomLight.cs" />
-     <Compile Include="Assets\scripts\sad.cs" />
      <Compile Include="Assets\scripts\screenInteract.cs" />
      <Compile Include="Assets\scripts\shake.cs" />
      <Compile Include="Assets\scripts\tardisLight.cs" />

@@ -20,6 +20,10 @@ public class angry : MonoBehaviour {
 	public Material angryTex;
 	public Material angrySky;
 	public GameObject floor;
+
+	public GameObject angrySound;
+	public GameObject backgroundSound;
+	public GameObject tardisSound;
 	
 	// Use this for initialization
 	void Start () {
@@ -30,6 +34,10 @@ public class angry : MonoBehaviour {
 		floor.renderer.material = angryTex;
 		RenderSettings.skybox=angrySky;
 		RenderSettings.ambientLight = new Color(0.714f, 0.239f, 0.063f,0.03f);
+
+		angrySound.SetActive(true);
+		backgroundSound.SetActive(false);
+		tardisSound.SetActive(true);
 	}
 	
 	// Update is called once per frame
